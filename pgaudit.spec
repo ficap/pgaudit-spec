@@ -8,10 +8,10 @@ URL:		http://pgaudit.org
 
 Source0:	https://github.com/%{name}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires: (postgresql-devel >= 10 and postgresql-devel < 11)
+BuildRequires: postgresql-devel >= 10, postgresql-devel < 11
 BuildRequires: openssl-devel
 
-Requires: (postgresql >= 10 and postgresql < 11)
+%{?postgresql_module_requires} 
 
 %description
 The PostgreSQL Audit extension (pgaudit) provides detailed session
