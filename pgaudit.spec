@@ -6,12 +6,12 @@ Summary:	PostgreSQL Audit Extension
 License:	PostgreSQL
 URL:		http://pgaudit.org
 
-Source0:	https://github.com/%{name}/%{name}/archive/%{version}.tar.gz
+Source0:	https://github.com/%{name}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires: postgresql-devel
+BuildRequires: (postgresql-devel >= 10 and postgresql-devel < 11)
 BuildRequires: openssl-devel
 
-Requires: postgresql
+Requires: (postgresql >= 10 and postgresql < 11)
 
 %description
 The PostgreSQL Audit extension (pgaudit) provides detailed session
