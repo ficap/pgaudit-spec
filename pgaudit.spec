@@ -39,7 +39,6 @@ trail or audit log. The term audit log is used in this documentation.
 %clean
 
 %files
-%defattr(-,root,root,-)
 %doc README.md
 %license LICENSE
 %{_libdir}/pgsql/%{name}.so
@@ -48,6 +47,11 @@ trail or audit log. The term audit log is used in this documentation.
 
 %changelog
 * Wed Dec 20 2017 - Filip Čáp <ficap@redhat.com> 1.2.0-1
-- Initial RPM packaging
-- Slightly based on Devrim Gündüz's RPM packaging 
-  for PostgreSQL repository
+- Initial RPM packaging for Fedora
+- Based on Devrim Gündüz's packaging for PostgreSQL RPM Repo
+
+* Thu Oct 27 2016 - Devrim Gündüz <devrim@gunduz.org> 1.0.0-1
+- Update to 1.0.0
+
+* Fri Oct 21 2016 - Devrim Gündüz <devrim@gunduz.org> 0.0.4-1
+- Initial RPM packaging for PostgreSQL RPM Repository
